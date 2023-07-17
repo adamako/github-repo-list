@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 :root {
-    @apply bg-[#F0F0F0] p-[2rem];
+    @apply bg-[#F0F0F0] p-[2rem] ;
+    font-family: 'Work Sans', sans-serif;
 }
