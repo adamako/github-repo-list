@@ -13,7 +13,7 @@ export const Header = () => {
           </span>
         </a>
 
-        <a href="Header#">
+        <a target="_blank" href="https://github.com/adamako/github-repo-list">
           <GithubIcon />
         </a>
       </div>

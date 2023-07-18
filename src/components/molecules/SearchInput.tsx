@@ -1,28 +1,19 @@
 import { SearchIcon } from "../atoms";
-import { ChangeEvent, FormEvent } from "react";
+import { FormEvent, LegacyRef, RefObject } from "react";
 
 type SearchBarProps = {
-  inputValue: string;
-  handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  inputRef: RefObject<HTMLInputElement | undefined>;
   handelSubmit: (event: FormEvent<HTMLFormElement>) => void;
-  handleFocus?: () => void;
 };
 
-export const SearchInput = ({
-  handleChange,
-  inputValue,
-  handelSubmit,
-  handleFocus,
-}: SearchBarProps) => {
+export const SearchInput = ({ inputRef, handelSubmit }: SearchBarProps) => {
   return (
     <div className="mt-2 w-full px-2 flex flex-col justify-center items-center">
       <div className="relative w-full w-[490px]">
         <form onSubmit={(e) => handelSubmit(e)}>
           <input
-            onFocus={handleFocus}
+            ref={inputRef as LegacyRef<HTMLInputElement>}
             pattern="\S+"
-            value={inputValue}
-            onChange={handleChange}
             className="rounded font-normal rounded-[10px] text-sm border-none py-3 px-5  bg-[#F3F3F3] focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent w-full"
             placeholder="username, e.g. 'adamako'"
           />
