@@ -6,6 +6,10 @@ Before you start, ensure you have the following installed on your local machine:
 
 - [Node.js](https://nodejs.org/): latest or >= 16
 
+## Demo
+
+Check out the live demo of this project [here](https://github-repo-list-sage.vercel.app/)
+
 ## Getting Started
 
 1. Clone this repository to your local machine (ssh)
