@@ -24,9 +24,10 @@ export const RepositoryList = ({
       {repositories.map((repo) => (
         <RepositoryItem key={repo.id} repo={repo} />
       ))}
-      <div className="flex justify-center">
+      <div className="flex text-xs justify-center">
         {repositories && repositories.length > 0 && totalPage > 1 && (
           <Pagination
+            className="text-xs md:text-base lg:text-lg"
             currentPage={currentPage}
             onPageChange={handlePageChange}
             totalPages={totalPage}

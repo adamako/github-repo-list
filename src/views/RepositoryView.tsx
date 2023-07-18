@@ -61,7 +61,7 @@ export const RepositoryView = () => {
   };
 
   return (
-    <div className="w-full bg-white mt-10 p-10 rounded rounded-[10px] h-full">
+    <div className="w-full bg-white mt-10 p-5  rounded rounded-[10px] h-full">
       <h1 className="text-2xl text-center mb-5">Welcome</h1>
       <SearchInput inputRef={inputRef} handelSubmit={handleSubmit} />
       <div className="mt-5">

@@ -16,7 +16,7 @@ export const RepositoryItem = ({ repo }: RepositoryItemProps) => {
       >
         {repo.html_url}
       </a>
-      <div className="flex items-center font-thin text-sm mt-3">
+      <div className="flex items-center flex-wrap font-thin text-sm mt-3">
         <a href={repo.owner.html_url}>
           <div className="flex items-center mr-5">
             <img
