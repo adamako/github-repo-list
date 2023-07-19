@@ -12,7 +12,7 @@ Check out the live demo of this project [here](https://github-repo-list-sage.ver
 
 ## Getting Started
 
-1. Clone this repository to your local machine (ssh)
+1. Clone this repository to your local machine
 
    ```bash
    # with ssh
